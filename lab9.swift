@@ -1,9 +1,9 @@
 let n = Int(readLine() ?? "") ?? 0;
 
-var arr: [Int] = [Int]();
+var arr: [Int] = [Int](repeating: 0, count: n);
 
-for _ in 0..<n {
-    arr.append(Int(readLine() ?? "") ?? 0);
+for i in 0..<n {
+    arr[i] = Int(readLine() ?? "") ?? 0;
 }
 
 func printArr (from: [Int]) -> Void {
